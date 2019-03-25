@@ -1,15 +1,15 @@
 ﻿spring:
  profiles:
   active:
-   -dev
+   - dev
 ---
 
 server:
-  port:8201
+  port: 8201
 spring:
-  profiles:dev
+  profiles: dev
   application:
-    name:microservicecloud-config-client
+    name: microservicecloud-config-client
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
@@ -21,11 +21,11 @@ eureka:
 ---
  
 server:
-  port:8202
+  port: 8202
 spring:
-  profiles:test
+  profiles: test
   application:
-    name:microservicecloud-config-client
+    name: microservicecloud-config-client
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
